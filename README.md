@@ -1,18 +1,10 @@
-## Getting Started
+### Medidas de Impureza
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+1. **Error de Clasificación (IGE)**:
+   - Error de Clasificación: \( IGE = 1 - \text{max}(P(i|t)) \)
 
-## Folder Structure
+2. **Impureza de Gini (IGG)**:
+   - Impureza de Gini: \( IGG = 1 - \sum (P(i|t)^2) \)
 
-The workspace contains two folders by default, where:
-
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
-
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
-
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
-
-## Dependency Management
-
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+3. **Entropía (IGH)**:
+   - Entropía: \( IGH = - \sum (P(i|t) \cdot \log_2(P(i|t))) \)
